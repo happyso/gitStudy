@@ -12,3 +12,4 @@ git pull origin --allow-unrelated-histories
 최신 걸로 덮어쓰기: 'error: 병합 때문에 추적하지 않는 다음 작업 폴더의 파일을 덮어씁니다:' 와 같이 나온 경우, 덮어쓰기하고 싶을 때 사용
     git fetch --all
     git reset --hard origin/master
+vim {파일명} -> i -> ESC (out) -> :wq     
