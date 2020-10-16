@@ -5,3 +5,10 @@ ls : 해당 디렉토리에 있는 내용을 출력
     -a 디렉토리 안에 있는 모든 파일과 디렉토리를 보여준다.
     -l 파일에 대한 정보를 자세하게 보여준다. 사용자의 권한, 소유자 그룹, 크기, 날짜 등을 자세하게 보여준다. list
     -h -l에서 지정한 크기 등을 사람이 읽기 쉽게 변환하여 보여준다. humanize
+관계 없는 커밋 내역의 병합을 거부합니다(refusing to merge unrelated histories) 조치:
+git pull origin --allow-unrelated-histories
+원격 저장소 URL 수정하기:  git remote set-url origin http://192.168.2.203/something.git
+원격 저장소 정보보기 : git remote -v
+최신 걸로 덮어쓰기: 'error: 병합 때문에 추적하지 않는 다음 작업 폴더의 파일을 덮어씁니다:' 와 같이 나온 경우, 덮어쓰기하고 싶을 때 사용
+    git fetch --all
+    git reset --hard origin/master
